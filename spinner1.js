@@ -12,19 +12,19 @@
 
 // setTimeout(() => {
 //   // Need to escape the backslash since it's a special character.
-//   process.stdout.write('\r\\   '); 
+//   process.stdout.write('\r\\   ');
 // }, 700);
 
 // ... fill in the rest yourself ...
-let arr = ['|', '/', '-', '\\', '|', '/', '-', '\\', '|']
-let x = 0
+let arr = ['|', '/', '-', '\\', '|', '/', '-', '\\', '|'];
+let x = 0;
 for (let line of arr) {
-  x += 200
+  x += 200;
   setTimeout(() => {
-  process.stdout.write('\r' + line)
-  }, x)
+    process.stdout.write('\r' + line);
+  }, x);
 }
-let finish = arr.length * 200
+let finish = arr.length * 200;
 setTimeout(() => {
-  console.log()
-}, finish)
+  console.log();
+}, finish);
